@@ -1,0 +1,31 @@
+-create a grocery store database
+
+
+CREATE TABLE sofias(id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, aisle INTEGER, price INTEGER);
+
+INSERT INTO sofias VALUES (1,"Purses",6,2,22);
+INSERT INTO sofias VALUES(2,"Rings",10,7,2);
+INSERT INTO sofias VALUES(3,"Shoes",30,9,9);
+INSERT INTO sofias VALUES(4,"Socks",45,9,3);
+INSERT INTO sofias VALUES(5,"Clips",100,1,2);
+INSERT INTO sofias VALUES(6,"Ties",200,1,1);
+INSERT INTO sofias VALUES(7,"Bands",300,1,2);
+INSERT INTO sofias VALUES(8,"bobbypins",250,1,2);
+INSERT INTO sofias VALUES(9,"Brushes",10,1,7);
+INSERT INTO sofias VALUES(10,"Gel",9,1,10);
+INSERT INTO sofias VALUES(11,"Tops",2,2,12);
+INSERT INTO sofias VALUES(12,"Bras",18,3,25);
+INSERT INTO sofias VALUES(13,"Shorts",29,2,30);
+INSERT INTO sofias Values(14,"Pants",35,2,40);
+INSERT INTO sofias VALUES(15,"Skirts",29,2,25);
+
+-display the database by price
+
+SELECT * FROM sofias;
+SELECT * FROM sofias ORDER BY price asc;
+
+-what is the total price for all the items?
+
+SELECT TOTAL(price)FROM sofias;
+
+
