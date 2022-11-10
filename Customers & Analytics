@@ -35,9 +35,6 @@ LEFT JOIN BIT_DB.customers cust
 WHERE Feb.quantity>2
 
 #7. How many customers ordered more than 2 products at a time in February, and what was the average amount spent for those customers?
-SELECT distinct product,min(price)
-FROM BIT_DB.JanSales
-GROUP BY product;
 
 SELECT
 COUNT(cust.acctnum),
