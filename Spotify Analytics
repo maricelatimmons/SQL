@@ -46,5 +46,17 @@ Order BY artist_name asc;
 SELECT MAX(duration_ms)
 FROM BIT_DB.Spotifydata;
 
+# I than I wanted to sort out all the songs by Bad Bunny with his track name, and popularity. 
+
+SELECT artist_name, track_name,popularity
+FROM BIT_DB.Spotifydata
+WHERE artist_name Like '%Bad Bunny%'
+GROUP by duration_ms;
+
+# Lastly, I wanted to find the average danceability for all the songs.
+SELECT Avg(danceability)
+FROM BIT_DB.Spotifydata;
+
+
 
 
